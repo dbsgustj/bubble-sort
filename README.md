@@ -8,14 +8,23 @@ import java.util.Arrays;
 
 public class bubbleSort {
 public static void main(String[] args) {
-	int[] a = { 3, 5, 1, 2, 4 };
-	int tempValue;
-	for (int i = 0; i < a.length; i++) {
-	for (int j = 0; j < a.length - i - 1; j++) { // 0 ~ n, 0 ~ n-1 번 반복를 돌면서 바로 옆 숫자릴 비교
-	if (a[j] > a[j + 1]) {  // 바로 오른쪽 숫자와 비교하여 크기가 클 경우, 서로 위치를 바꿈
-		tempValue = a[j];
-		a[j] = a[j + 1];
-		a[j + 1] = tempValue;
+
+int[] a = { 3, 5, 1, 2, 4 };
+
+int tempValue;
+
+for (int i = 0; i < a.length; i++) {
+
+for (int j = 0; j < a.length - i - 1; j++) { // 0 ~ n, 0 ~ n-1 번 반복를 돌면서 바로 옆 숫자릴 비교
+
+if (a[j] > a[j + 1]) {  // 바로 오른쪽 숫자와 비교하여 크기가 클 경우, 서로 위치를 바꿈
+
+tempValue = a[j];
+
+a[j] = a[j + 1];
+
+a[j + 1] = tempValue;
+
 				}
 			}
 		}
